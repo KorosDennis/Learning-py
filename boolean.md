@@ -215,3 +215,58 @@ elif test_expression:
         # statement(s) to be run
 else:
     # statement(s) to be run
+```
+
+
+
+### The and operator
+
+```python 
+
+You can also connect two test expressions by using the Boolean and operator. Both conditions in the test expression must be true for the entire test expression to evaluate to True. In any other case, the test expression is False. In the following example, the entire test expression evaluates to False, because only one of the conditions in the subexpressions is true:
+
+a = 23
+b = 34
+if a == 34 and b == 34 :
+    print(a+b)
+
+a boolean expression that uses and has the following syntax:
+
+sub-expression1 and sub-expression2
+```
+
+### The Difference between and, or
+ 
+ o highlight the difference between the two Boolean operators, you can use a truth table. A truth table shows you what the entire test expression evaluates to based on the two subexpressions.
+
+Here's the truth table for and:
+
+subexpression1 	Operator 	subexpression2 	Result
+   True 	     and 	       True 	     True
+   True 	     and 	       False 	     False
+   False 	     and 	       True 	     False
+   False 	     and 	       False 	     False
+
+Here's the truth table for or:
+
+subexpression1 	Operator 	subexpression2 	 Result
+    True 	        or 	        True 	      True
+    True 	        or 	        False      	  True
+    False 	        or 	        True 	      True
+    False 	        or 	        False 	      False
+
+
+## SUMMARY
+```python
+By using test expressions, otherwise known as Boolean expressions, you can conditionally run Python code. They're commonly used in Python to "make decisions" about what should happen next while a program is running. In the earlier units, you wrote test expressions as part of if, else, and elif statements, and you further fine-tuned your conditions by using the operators and and or.
+
+Boolean expressions and statements are a key part of creating complex Python programs, where you want your code to run only under certain conditions.
+
+Here are some of the essentials you now know about conditional logic:
+
+    Booleans can have one of two values, True or False.
+    if, else, and elif statements can be used to run code under specific conditions.
+    and and or operators can be used to combine test expressions and create more complex conditions.
+
+With these tools, you should feel ready to write more complex code blocks in Python.
+```
